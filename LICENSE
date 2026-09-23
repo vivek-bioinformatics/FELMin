@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Vivek Dhar Dwivedi
+Copyright (c) 2026 Dr. Vivek Dhar Dwivedi (Raja Shankar Shah University, Chhindwara, Madhya Pradesh, India & Bioinformatics Research Division, Quanta Calculus, Greater Noida) and Dr. Amaresh Kumar Sahoo (Department of Applied Sciences, Indian Institute of Information Technology Allahabad, Prayagraj, 211015, India)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+NOTE: This software calls the Schrodinger Suite Python API
+(schrodinger.application.desmond.packages, schrodinger.trajectory.prody) and
+optionally PyMOL. These are separate, third-party software packages not
+covered by this license -- using this code requires your own valid
+Schrodinger Suite license and, for the rendering features, a working PyMOL
+installation (open-source or licensed). This MIT license applies only to the
+original Python code in this repository, not to Schrodinger's or PyMOL's own
+software.
