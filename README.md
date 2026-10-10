@@ -36,7 +36,6 @@ A companion script assembles multi-panel publication figures. It places the mini
 | File | Role |
 |---|---|
 | `__init__.py` | PyMOL plugin: style picker GUI and pipeline orchestrator |
-| `pca_fel_analysis.py` | PCA, FEL, minima detection and structure extraction (Schrödinger Python) |
 | `fel_styles.py` | The 20 style definitions — edit or add styles here |
 | `fel_plots.py` | All plotting, shared by the real run and the style previews |
 | `fel_style_previews/` | Thumbnails, 2×2 previews and `fel_style_gallery.png` |
