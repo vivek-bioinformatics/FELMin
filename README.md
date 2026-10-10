@@ -5,11 +5,13 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22909334.svg)](https://doi.org/10.5281/zenodo.22909334)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-FELMin performs principal component analysis (PCA) on the protein backbone of a
-Desmond MD trajectory, builds a 2D free energy landscape (FEL) on PC1/PC2,
-detects the distinct free-energy minima automatically, extracts a
-representative structure for each minimum, and renders publication-ready
-figures — all from a single dialog inside PyMOL or one command in a terminal.
+FELMin is a PyMOL plugin for principal component analysis (PCA) and free energy landscape (FEL) analysis of Desmond molecular dynamics trajectories. The analysis runs in Schrödinger’s Python environment and is launched from a single PyMOL dialog or from the command line. It performs PCA on the protein backbone after iterative Kabsch alignment to remove rigid-body motion. It then projects the trajectory onto PC1 and PC2 and constructs a two-dimensional free energy landscape in kcal/mol.
+
+It automatically detects distinct free-energy minima, then extracts the trajectory frame closest to each minimum as a representative structure in MAE and PDB format. These structures are rendered in PyMOL and loaded into the session for inspection.
+
+FELMin produces five publication-ready figures: a 2D FEL, a labeled 2D FEL, a 3D FEL surface, a PCA scatter plot, and a scree plot. This release adds 20 ready-made figure styles, chosen at start-up with a live preview. They include journal, color-blind-safe, greyscale print, and dark presentation themes. Run settings are recorded for reproducibility.
+
+A companion script assembles multi-panel publication figures. It places the minima structures around each FEL with connecting arrows and exports PNG, TIFF, and PDF at a defined print width and 600 dpi.
 
 ## Authors
 - **Dr. Vivek Dhar Dwivedi** — Raja Shankar Shah University, Chhindwara, Madhya Pradesh, India
